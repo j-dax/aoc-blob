@@ -10,7 +10,7 @@ TEST_CASE("end to end gives correct solution", "[DAY 2]") {
 		"Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red",
 		"Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green",
 	};
-	REQUIRE( day2::solveA(input) == 8 );
-	REQUIRE( day2::solveB(input) == 2286 );
+	REQUIRE( day2::solve_a(input) == 8 );
+	REQUIRE( day2::solve_b(input) == 2286 );
 }
 

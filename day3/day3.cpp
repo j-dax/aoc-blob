@@ -7,7 +7,7 @@ using namespace day3;
 bool in_range(int min, int x, int max) {
 	return min <= x && x <= max;
 }
-bool debug = false;
+
 std::vector<Result> day3::get_nearby_numbers(std::vector<std::string> &input, int i, int idx) {
 	int N = input.size(), M = input[0].size();
 	std::vector<Result> vec;

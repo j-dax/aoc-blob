@@ -10,9 +10,9 @@ namespace day2 {
 		size_t next_index;
 	};
 
-	std::string scanResult(std::string source, size_t start);
-	Cube getNextCube(std::string line, size_t start);
-	int solveA(std::vector<std::string> input);
-	int solveB(std::vector<std::string> input);
+	std::string scan_result(std::string source, size_t start);
+	Cube get_next_cube(std::string line, size_t start);
+	int solve_a(std::vector<std::string> input);
+	int solve_b(std::vector<std::string> input);
 }
 

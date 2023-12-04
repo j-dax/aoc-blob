@@ -46,10 +46,10 @@ TEST_CASE("end to end", "[DAY 3]") {
 		REQUIRE( day3::solve_a(input) == 4361 );
 		REQUIRE( day3::solve_b(input) == 467835 );
 	}
+	input = read_lines("input.txt");
 	SECTION("end to end puzzle data") {
-		input = read_lines("input.txt");
 		REQUIRE( input.size() == 140 );
-		REQUIRE( day3::solve_b(input) == 61759292 ); // incorrect
 		REQUIRE( day3::solve_a(input) == 536576 );
+		REQUIRE( day3::solve_b(input) == 75741499 );
 	}
 }
