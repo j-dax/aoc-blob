@@ -1,7 +1,7 @@
 input.txt
 test.txt
 
-out
+.ccls-cache
+build
 CMakeCache.txt
 CMakeFiles
-

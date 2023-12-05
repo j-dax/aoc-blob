@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
-#include "day3.hpp"
-#include "../utils/read_file.hpp"
+#include "day3.h"
+#include "../aoc/aoc.h"
 
 
 TEST_CASE("edge cases", "[DAY 3]") {
@@ -40,13 +40,13 @@ TEST_CASE("edge cases", "[DAY 3]") {
 	REQUIRE( day3::solve_b(input) == (123*456+283*341+83*51) );
 }
 TEST_CASE("end to end", "[DAY 3]") {
-	auto input = read_lines("test.txt");
+	auto input = aoc::read_to_vec("test.txt");
 	SECTION("end to end test data") {
 		REQUIRE( input.size() == 10 );
 		REQUIRE( day3::solve_a(input) == 4361 );
 		REQUIRE( day3::solve_b(input) == 467835 );
 	}
-	input = read_lines("input.txt");
+	input = aoc::read_to_vec("input.txt");
 	SECTION("end to end puzzle data") {
 		REQUIRE( input.size() == 140 );
 		REQUIRE( day3::solve_a(input) == 536576 );

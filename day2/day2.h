@@ -1,7 +1,7 @@
 #pragma once
 
-#include<string>
-#include<vector>
+#include <string>
+#include <vector>
 
 namespace day2 {
 	struct Cube {

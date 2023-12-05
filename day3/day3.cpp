@@ -1,4 +1,4 @@
-#include "day3.hpp"
+#include "day3.h"
 #include <cstdint>
 #include <vector>
 
