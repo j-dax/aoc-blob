@@ -1,0 +1,19 @@
+{
+  "configurations": {
+    "<name>: Launch": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "configuration": {
+        "name": "<name>: Launch",
+        "type": "python",
+        "request": "launch",
+        "cwd": "D:/aoc-cpp/day5",
+        "python": "C:/Users/EzriDax/AppData/Local/Programs/Python/Python311/python.exe",
+        "stopOnEntry": true,
+        "console": "externalTerminal",
+        "debugOptions": [],
+        "program": "D:/aoc-cpp/day5/day5.py"
+      }
+    }
+  }
+}

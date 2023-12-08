@@ -26,13 +26,4 @@ std::vector<std::string> read_to_vec(const char *filename) {
 			});
 	return {std::ranges::begin(it), std::ranges::end(it)};
 }
-
-template<typename T>
-void print_vec(std::vector<T> v) {
-	std::cout << "[";
-	for (int a : v) {
-		std::cout << a << ", ";
-	}
-	std::cout << "]" << std::endl;
-}
 }
