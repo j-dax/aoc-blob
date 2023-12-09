@@ -2,20 +2,21 @@ from dataclasses import dataclass
 
 
 def parse_input(filename) -> list[list[int]]:
-    ints = []
-    with open(filename, 'r+') as fi:
-      for line in fi.readlines():
-        if ":" in line:
-          ints.append([])
+  ints = []
+  with open(filename, 'r+') as fi:
+    for line in fi.readlines():
+      if ":" in line:
+        ints.append([])
         found = list(map(int,
-          filter(lambda x: len(list(
-            filter(str.isdigit, x)
-          )) > 0,
-          line.split(" "))
-        ))
+                         filter(lambda x: len(list(
+                         filter(str.isdigit, x)
+                         )) > 0,
+                                line.split(" "))
+                         ))
         if len(found) > 0:
           ints[-1].extend(found)
     return ints
+
 
 @dataclass
 class TRange:
@@ -31,6 +32,7 @@ class TRange:
 
   def __str__(self):
     return f"TRange({self.left}, {self.right})"
+
 
 @dataclass
 class TUnit:
@@ -71,7 +73,7 @@ def prepare_groups(nums):
     [TUnit(
       destination=TRange(left=nums[i][j], right=nums[i][j]+nums[i][j+2]-1, index=i),
       source=TRange(left=nums[i][j+1], right=nums[i][j+1]+nums[i][j+2]-1, index=i),
-      ) for j in range(0, len(nums[i]), 3)
+    ) for j in range(0, len(nums[i]), 3)
     ] for i in range(1, len(nums))
   ]
   for i in range(len(groups)):
@@ -84,7 +86,7 @@ def solve_b_next_queue(queue: list[TRange], group: list[TUnit]):
   for _ in range(len(queue)):
     front = queue[0]
     queue = queue[1:]
-  
+
     front.index += 1
     left_min = front.left
     # make sure the input range is covered
