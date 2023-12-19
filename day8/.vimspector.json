@@ -1,0 +1,26 @@
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "vscode-cpptools",
+      "filetypes": [ "cpp", "c", "objc", "rust" ],
+      "configuration": {
+        "request": "launch",
+        "program": "./build/day8/day8-test.exe",
+        "args": [],
+        "cwd": "D:/aoc-cpp",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "gdb"
+      }
+    },
+    "Attach": {
+      "adapter": "vscode-cpptools",
+      "filetypes": [ "cpp", "c", "objc", "rust" ],
+      "configuration": {
+        "request": "attach",
+        "program": "./build/day8/day8-test.exe",
+        "MIMode": "gdb"
+      }
+    }
+  }
+}

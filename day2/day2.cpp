@@ -3,6 +3,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include <climits>
 
 namespace day2 {
 std::string scanResult(std::string source, size_t start) {

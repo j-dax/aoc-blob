@@ -2,6 +2,6 @@ input.txt
 test.txt
 
 .ccls-cache
-build
+*build
 CMakeCache.txt
 CMakeFiles

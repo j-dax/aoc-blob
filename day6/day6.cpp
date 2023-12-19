@@ -33,7 +33,8 @@ int64_t num_winning_runs(std::vector<std::vector<int64_t>> runs) {
 	// zip [ times, distance ]
 	auto score = 1;
 	for (int i = 0; i < runs[0].size(); i++) {
-		auto count = 0LL, time_limit = runs[0][i], distance_record = runs[1][i];
+		auto count = 0;
+		auto time_limit = runs[0][i], distance_record = runs[1][i];
 		for (size_t time = 1; time < time_limit; time++) {
 			auto velocity = time, time_remaining = time_limit - time;
 			if (distance_record < velocity * time_remaining) count++;

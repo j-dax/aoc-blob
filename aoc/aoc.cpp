@@ -21,6 +21,7 @@ std::vector<std::string> read_to_vec(const char *filename) {
 	const std::string contents = read_file(filename);
 	auto it = contents
 		| std::views::split('\n')
+		| std::views::filter(aoc::not_empty)
 		| std::views::transform([](std::ranges::bidirectional_range auto&& line) {
 				return std::string_view{line.begin(), line.end()};
 			});

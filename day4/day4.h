@@ -1,7 +1,6 @@
 #pragma once
 
 #include<string>
-#include<vector>
 
 namespace day4 {
 	int solve_a(const std::string& input);

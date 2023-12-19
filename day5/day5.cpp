@@ -126,7 +126,6 @@ std::vector<TRange> split(std::vector<int64_t>& group, TRange tr) {
 }
 
 int64_t solve_b(const std::string& input) {
-	std::cout << "SOLVE B" << std::endl;
 	auto groups = to_numbers(input, ":");
 	groups.erase(groups.begin()); // first vector is empty from "seeds: ..."
 	auto seeds = groups[0];

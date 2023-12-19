@@ -1,4 +1,5 @@
 #include "../aoc/aoc.h"
+#include "day4.h"
 
 #include <ranges>
 #include <iostream>
