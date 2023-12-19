@@ -1,0 +1,17 @@
+{
+  "configurations": {
+    "Launch": {
+      "adapter": "vscode-cpptools",
+      "filetypes": [ "cpp", "c", "objc", "rust" ],
+      "configuration": {
+        "request": "launch",
+        "program": "./build/day11/day11-test.exe",
+        "args": [],
+        "cwd": "D:/aoc-cpp",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb"
+      }
+    }
+  }
+}
